@@ -1,6 +1,6 @@
 package test;
 
-public class Exercise {
+public class zad3 {
 
     public static int searchIndex(int[] array, int value) {
         int index = 0;
@@ -12,6 +12,7 @@ public class Exercise {
             if (value > entry) {
                 index = (int) (point + 1);
                 continue;
+
             }
             if (value < entry) {
                 limit = (int) (point - 1);
