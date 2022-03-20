@@ -12,13 +12,11 @@ public class additional1 {
         cars.add("Ford");
         cars.add("Mazda");
         cars.add("Peugeot");
-        cars.add("Peugeot2");
+        cars.add("Volkswagen");
 
 
-        for (int i = 0; i < cars.size(); i++) {
-            if (i % 2 == 0) {
-                cars.remove(i);
-            }
+        for (int i = 0; i < cars.size(); i += 1) {
+            cars.remove(i);
         }
 
 
@@ -33,10 +31,8 @@ public class additional1 {
         animals.add("Snake");
 
 
-        for (int i = 0; i < animals.size(); i++) {
-            if (i % 2 == 0) {
+        for (int i = 0; i < animals.size(); i+=1) {
                 animals.remove(i);
-            }
         }
         System.out.println(animals);
 
