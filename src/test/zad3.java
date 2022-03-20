@@ -18,7 +18,7 @@ public class zad3 {
                 limit = (int) (point - 1);
                 continue;
             }
-            return (int)point;
+            return (int) point;
         }
         return -1;
     }
@@ -30,5 +30,5 @@ public class zad3 {
 
         System.out.println(index);
     }
-    }
+}
 
