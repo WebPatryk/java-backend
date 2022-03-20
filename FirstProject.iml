@@ -7,5 +7,19 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="jar_files" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Desktop/gson-2.6.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="fasterxml.storemate.shared" level="project" />
+    <orderEntry type="library" exported="" name="jackson.lgpl" level="project" />
+    <orderEntry type="library" exported="" name="codehaus.jackson.mapper.asl" level="project" />
+    <orderEntry type="library" exported="" name="codehaus.jackson.xc" level="project" />
   </component>
 </module>
