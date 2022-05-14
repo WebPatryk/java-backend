@@ -1,0 +1,17 @@
+JAVA - opis schematu aplikacji na projekt zaliczniowy
+1. Aplikacja będzie stworzona w Javie z uzyciem bibliteki Spring Boot
+2.Projekt będzie opublikowany na publicznym repozytorium wraz z kodem dostepowym
+3.Logowanie sie do apliakcji czyli stworzenie autoryzacji.
+4.Każdy widok bedzie miał stworzy swój własy estetyczny UI w postacji stylów css
+5.Zaimplementowanie metod CRUD 
+6. Podłączenie sie do bazy dancyh obsługujacych zamówienia cześci samochodowych
+7. Stworzenie tzw. profile page w których będa informacje o zalogowanym użytkowniku
+8. Dodanie 2 mikroserwisów
+9. Informacja o zamówinych produkatch
+10.Twój koszyk z produktami
+11. Podstrona z informacjami o produktach które sa objete zniżką w danym dniu
+12.Metoda POST do dodawania produktów do sklepu
+13.Metoda PATCH do edycji tylko i wyłącznie swoich produktów
+14.Metoda DELETE do usuwania swoich produktów wystawionych na sprzedaż 
+15.Metoda GET do wyświetlenia wszystkich swoich produktów wystawionych na sklepie oraz kolejna me
+16. Kolejna metoda GET na wyświetlenie wszystich produktów różncyh uzytkowników wystawioncyh na sprzedaż
