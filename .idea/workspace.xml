@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="Create a new database and preparing model for it">
-      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/exception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/repository/CarPartsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/service/CarPartsService.java" afterDir="false" />
+    <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="Adding basic methods to feature implementation in CRUD">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/repository/CarPartsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/repository/CarPartsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/service/CarPartsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/service/CarPartsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -55,6 +56,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="exception" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.demo" />
     </key>
   </component>
   <component name="RunManager">
@@ -93,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654809098369</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding basic methods to feature implementation in CRUD">
+      <created>1654812904727</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654812904727</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +121,12 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create a new database and preparing model for it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a new database and preparing model for it" />
+    <MESSAGE value="Adding basic methods to feature implementation in CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding basic methods to feature implementation in CRUD" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_backend$DemoApplication.ic" NAME="DemoApplication Coverage Results" MODIFIED="1655417349182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.demo.*</FILTER>
+    </SUITE>
   </component>
 </project>
