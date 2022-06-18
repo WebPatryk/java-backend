@@ -14,17 +14,15 @@ public class CarParts implements Serializable {
     private String description;
     private Integer price;
     private String imageUrl;
-    private String code;
 
     public CarParts() {}
 
-    public CarParts(String name, String description, Integer price, String imageUrl, Long code) {
+    public CarParts(String name, String description, Integer price, String imageUrl) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.imageUrl = imageUrl;
     }
-
 
 
     public String getName() {
@@ -58,12 +56,6 @@ public class CarParts implements Serializable {
         this.imageUrl = imageUrl;
     }
 
-    public String getCode() {
-        return code;
-    }
-    public String setCode(String code) {
-        return this.code = code;
-    }
 
 
     @Override
@@ -74,7 +66,6 @@ public class CarParts implements Serializable {
                 ", description='" + description + '\'' +
                 ", price='" + price + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
-                ", code='" + code + '\'' +
                 '}';
     }
 }

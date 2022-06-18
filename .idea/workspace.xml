@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="Adding basic methods to feature implementation in CRUD">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="Controller to REST API">
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/CarPartsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/CarPartsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/CarPartsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/repository/CarPartsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/repository/CarPartsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/service/CarPartsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/service/CarPartsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/CarPartsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/CarPartsResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/exception/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/exception/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/repository/CarPartsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/repository/CarPartsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/service/CarPartsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654812904727</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Controller to REST API">
+      <created>1655470990431</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655470990431</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,7 +134,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create a new database and preparing model for it" />
     <MESSAGE value="Adding basic methods to feature implementation in CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding basic methods to feature implementation in CRUD" />
+    <MESSAGE value="Controller to REST API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controller to REST API" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_backend$DemoApplication.ic" NAME="DemoApplication Coverage Results" MODIFIED="1655417349182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
