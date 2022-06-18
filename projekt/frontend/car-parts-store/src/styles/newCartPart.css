@@ -1,0 +1,41 @@
+.new-cart-container{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+.cart-title{
+    text-align: center;
+    margin: 1rem;
+}
+.addNewCart-form{
+    display: flex;
+    flex-direction: column;
+    min-width: 30rem;
+    margin: auto;
+}
+.addNewCart-form input, .addNewCart-form textarea
+{
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    border: 1px solid lightgray;
+    outline: none;
+    color: black;
+    border-radius: 3px;
+
+}
+.addNewCart-form input::placeholder, .addNewCart-form textarea::placeholder{
+    color: black;
+}
+.addNewCart-form button{
+    display: inline-block;
+    margin: .5rem auto;
+    padding: .8rem 1.6rem;
+    background-color: #8a8ad0;
+    border: none;
+    color: #01012f;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+
+}

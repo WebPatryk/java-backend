@@ -1,0 +1,11 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: auto;
+}
+.list h3{
+    text-align: center;
+    border-top: 1px solid gray;
+    padding-top: 3rem;
+}
