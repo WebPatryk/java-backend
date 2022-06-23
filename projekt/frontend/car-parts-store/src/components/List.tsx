@@ -18,10 +18,10 @@ const List = ({ carParts }: Props): JSX.Element => {
     <div className="list">
       <h3>Car Parts list</h3>
       <ul>
-        <li>Car part 1 </li>
-        <li>Car part 2 </li>
-        <li>Car part 3 </li>
-        <li>Car part 4 </li>
+        {carParts &&
+          carParts.map((carPart) => (
+            <li key={carPart.name}>{carPart.name} </li>
+          ))}
       </ul>
     </div>
   );

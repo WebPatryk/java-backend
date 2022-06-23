@@ -1,42 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "styles/app.css";
 import NavBar from "./NavBar";
-import NewCarPart from "components/NewCarPart";
-import List from "components/List";
-
-interface CarPart {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  url: string;
-}
+import Profile from "components/Profile";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import MainPage from "components/MainPage";
 
 function HomePage() {
-  const [carParts, setCarParts] = useState<CarPart[]>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("http://localhost:8080/products/getAll", {
-          mode: "no-cors",
-        });
-        const json = await response.json();
-        console.log(json);
-        setCarParts(json);
-      } catch (_err) {
-        console.log(_err);
-      }
-    };
-    fetchData();
-  }, []);
-
   return (
-    <div className="App">
-      <NavBar />
-      <NewCarPart />
-      <List carParts={carParts} />
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

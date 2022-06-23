@@ -5,32 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="Adding controller to rest api">
-      <change afterPath="$PROJECT_DIR$/projekt/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/.idea/projekt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/HomePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/List.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/NavBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/NewCarPart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/styles/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/MainPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/Profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/styles/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/List.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/NewCarPart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/NewCarPart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/styles/newCartPart.css" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/styles/newCartPart.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +151,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adding controller to rest api" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/java_backend$DemoApplication.ic" NAME="DemoApplication Coverage Results" MODIFIED="1655417349182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/java_backend$DemoApplication.ic" NAME="DemoApplication Coverage Results" MODIFIED="1655987024416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.demo.*</FILTER>
     </SUITE>
   </component>
