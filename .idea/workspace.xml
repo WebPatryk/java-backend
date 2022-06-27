@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="Adding controller to rest api">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="new endpoint to POST,PUT,DELETE">
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/DiscountProductsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/DiscountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/CarPartsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/CarPartsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/repository/CarPartsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/repository/CarPartsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/CarPartsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/CarPartsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/CarPartsServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655569506329</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new endpoint to POST,PUT,DELETE">
+      <created>1656369128061</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656369128061</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +167,8 @@
     <MESSAGE value="Adding basic methods to feature implementation in CRUD" />
     <MESSAGE value="Controller to REST API" />
     <MESSAGE value="Adding controller to rest api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding controller to rest api" />
+    <MESSAGE value="new endpoint to POST,PUT,DELETE" />
+    <option name="LAST_COMMIT_MESSAGE" value="new endpoint to POST,PUT,DELETE" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_backend$DemoApplication.ic" NAME="DemoApplication Coverage Results" MODIFIED="1655987024416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
