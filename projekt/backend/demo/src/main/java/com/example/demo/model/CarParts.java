@@ -22,8 +22,16 @@ public class CarParts implements Serializable {
         this.description = description;
         this.price = price;
         this.imageUrl = imageUrl;
+
     }
 
+
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
