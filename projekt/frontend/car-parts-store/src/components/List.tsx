@@ -60,8 +60,8 @@ const List = ({ carParts }: Props): JSX.Element => {
             </div>
           ))}
       </ul>
-      <EditModal />
-      <RemoveModal />
+      {/*<EditModal />*/}
+      {/*<RemoveModal />*/}
     </div>
   );
 };

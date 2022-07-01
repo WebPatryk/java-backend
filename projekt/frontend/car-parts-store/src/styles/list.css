@@ -16,11 +16,13 @@
 }
 .container-list h3{
     text-align: left;
+    padding-top: 0;
 }
 
 .image{
-    border-radius: 50%;
+    border-radius: 10%;
     max-width: 200px;
+    margin-right: 1rem;
 }
 
 .container-list .actions{
@@ -32,7 +34,17 @@
 }
 .container-list .actions .edit{
     color: #1131a4;
+    background-color: #8a8ad0;
+    padding: .8rem;
+    border-radius: 50%;
+    margin: 0 .3rem;
+    cursor: pointer;
 }
 .container-list .actions .remove{
-    color: #ff0000
+    color: #bd0606;
+    margin: 0 .3rem;
+    background-color: #8a8ad0;
+    padding: .8rem;
+    border-radius: 50%;
+    cursor: pointer;
 }

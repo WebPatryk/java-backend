@@ -5,6 +5,7 @@ import java.io.Serializable;
 import java.util.UUID;
 
 @Entity
+@Table(name="profile")
 public class Profile implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)

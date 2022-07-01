@@ -1,5 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "styles/newCartPart.css";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
 
 const NewCarPart = () => {
   const [values, setValues] = useState({
@@ -14,7 +18,10 @@ const NewCarPart = () => {
   };
 
   const handleSubmit = (e) => {
+    const { name, description, price, imageUrl } = values;
+
     e.preventDefault();
+    if (!name || !description || !price || !imageUrl) return;
     const fetchData = async () => {
       try {
         const response = await fetch("http://localhost:8080/products/add", {
@@ -26,6 +33,7 @@ const NewCarPart = () => {
         });
         const json = await response.json();
         console.log(json);
+        NotificationManager.success("Success", "Car part has been added");
       } catch (_err) {
         console.log(_err);
       }
@@ -58,6 +66,7 @@ const NewCarPart = () => {
         />
         <button type="submit">Submit</button>
       </form>
+      <NotificationContainer />
     </div>
   );
 };
