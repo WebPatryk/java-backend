@@ -4,10 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="new endpoint to POST,PUT,DELETE">
-      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/DiscountProductsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/DiscountService.java" afterDir="false" />
+    <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="adding profile">
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/BasketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/Basket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/repository/BasketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/repository/ProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/BasketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/ProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/.idea/frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/Basket.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/Discount.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/modals/AddModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/modals/EditModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/modals/RemoveModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/DiscountProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/DiscountProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/DiscountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/DiscountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/List.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/styles/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/styles/list.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656369128061</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="mechanism for draws of products at a discount">
+      <created>1656370644995</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656370644995</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,7 +200,8 @@
     <MESSAGE value="Controller to REST API" />
     <MESSAGE value="Adding controller to rest api" />
     <MESSAGE value="new endpoint to POST,PUT,DELETE" />
-    <option name="LAST_COMMIT_MESSAGE" value="new endpoint to POST,PUT,DELETE" />
+    <MESSAGE value="mechanism for draws of products at a discount" />
+    <option name="LAST_COMMIT_MESSAGE" value="mechanism for draws of products at a discount" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_backend$DemoApplication.ic" NAME="DemoApplication Coverage Results" MODIFIED="1655987024416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

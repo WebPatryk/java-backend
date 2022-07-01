@@ -6,6 +6,33 @@
 }
 .list h3{
     text-align: center;
-    border-top: 1px solid gray;
     padding-top: 3rem;
+}
+
+.container-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.container-list h3{
+    text-align: left;
+}
+
+.image{
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.container-list .actions{
+    margin: auto;
+
+}
+.container-list .actions *{
+    padding: 0 .7rem;
+}
+.container-list .actions .edit{
+    color: #1131a4;
+}
+.container-list .actions .remove{
+    color: #ff0000
 }

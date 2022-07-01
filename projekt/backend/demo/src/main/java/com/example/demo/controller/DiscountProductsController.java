@@ -22,7 +22,7 @@ public class DiscountProductsController {
 
     @GetMapping("/getAll")
     public ResponseEntity<List<CarParts>> getAllDiscounts () {
-        CarParts discountProduct = discountService.findAllDiscount();
+        List<CarParts> discountProduct = discountService.findAllDiscount();
         return new ResponseEntity(discountProduct, HttpStatus.OK);
     }
 

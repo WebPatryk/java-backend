@@ -8,7 +8,7 @@ interface CarPart {
   name: string;
   description: string;
   price: number;
-  url: string;
+  imageUrl: string;
 }
 
 const MainPage = () => {

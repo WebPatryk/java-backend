@@ -6,6 +6,23 @@
     justify-content: space-between;
     padding: 1rem;
 }
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+.navbar-list li{
+    list-style-type: none;
+}
+.navbar-list a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #0f132b;
+    font-weight: 600;
+}
 .title{
     text-align: center;
     color: #01012f;
