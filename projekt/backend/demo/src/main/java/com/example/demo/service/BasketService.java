@@ -32,13 +32,13 @@ public class BasketService {
         return basketRepository.findAll();
     }
 
-    public Basket updateCarPart(Long id, CarParts carParts) {
+    public Basket updateCarPart(Long id, Basket basket) {
         Basket basketUpdate = basketRepository.getBasketById(id).orElseThrow(() -> new UserNotFoundException("Car part by id " + id + " was not found"));
 
-        basketUpdate.setName(carParts.getName());
-        basketUpdate.setDescription(carParts.getDescription());
-        basketUpdate.setPrice(carParts.getPrice());
-        basketUpdate.setImageUrl(carParts.getImageUrl());
+        basketUpdate.setName(basket.getName());
+        basketUpdate.setDescription(basket.getDescription());
+        basketUpdate.setPrice(basket.getPrice());
+        basketUpdate.setImageUrl(basket.getImageUrl());
 
         return basketRepository.save(basketUpdate);
 

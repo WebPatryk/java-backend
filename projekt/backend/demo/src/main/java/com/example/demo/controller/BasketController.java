@@ -38,17 +38,17 @@ public class BasketController {
         return new ResponseEntity<>(newProductToBasket, HttpStatus.CREATED);
     }
 
-/*    @PutMapping("/update/{id}")
-    public ResponseEntity<CarParts> updateCarPart(@PathVariable("id") Long id,@RequestBody CarParts carParts) {
-        CarParts updateCarPart = carPartsService.updateCarPart(id, carParts);
-        return new ResponseEntity<>(updateCarPart, HttpStatus.OK);
+    @PutMapping("/update/{id}")
+    public ResponseEntity<Basket> updateBasket(@PathVariable("id") Long id,@RequestBody Basket basket) {
+        Basket updateBasket = basketService.updateCarPart(id, basket);
+        return new ResponseEntity<>(updateBasket, HttpStatus.OK);
     }
-
+    
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteCarPart(@PathVariable("id") Long id) {
-        carPartsService.deleteCarPart(id);
+    public ResponseEntity<?> deleteProductFromBasket(@PathVariable("id") Long id) {
+        basketService.deleteCarPart(id);
         return new ResponseEntity<>(HttpStatus.OK);
-    }*/
+    }
 
 
 }

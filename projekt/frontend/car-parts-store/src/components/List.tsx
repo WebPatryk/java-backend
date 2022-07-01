@@ -2,8 +2,10 @@ import React from "react";
 import "styles/list.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import EditModal from "modals/EditModal";
-import RemoveModal from "modals/RemoveModal";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
 
 interface Props {
   carParts: CarParts[];
@@ -32,6 +34,7 @@ const List = ({ carParts }: Props): JSX.Element => {
     } catch (_err) {
       console.log(_err);
     }
+    NotificationManager.success("Success", "Car part has been added to basket");
   };
 
   return (
@@ -60,8 +63,7 @@ const List = ({ carParts }: Props): JSX.Element => {
             </div>
           ))}
       </ul>
-      {/*<EditModal />*/}
-      {/*<RemoveModal />*/}
+      <NotificationContainer />
     </div>
   );
 };

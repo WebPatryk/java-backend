@@ -1,0 +1,35 @@
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: lightgray;
+    min-width:50%;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+
+}
+
+
+.update{
+    padding: .5rem 1rem;
+    background: gray;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.delete{
+    padding: .5rem 1rem;
+    background: red;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}

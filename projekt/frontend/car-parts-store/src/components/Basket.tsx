@@ -3,7 +3,7 @@ import "styles/navbar.css";
 import NewCarPart from "components/NewCarPart";
 import List from "components/List";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import EditModal from "modals/EditModal";
 import RemoveModal from "modals/RemoveModal";
 
@@ -17,6 +17,8 @@ interface CarPart {
 
 const Basket = () => {
   const [basket, setBasket] = useState<CarPart[]>(null);
+  const [isEditModalOpen, setIsEditModalActive] = useState<boolean>(false);
+  const [isDeleteModalOpen, setIsDeleteModalActive] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,10 +34,20 @@ const Basket = () => {
     fetchData();
   }, []);
 
+  const update = (data) => {
+    console.log(data);
+    setIsEditModalActive(data);
+  };
+
+  const remove = (data) => {
+    console.log(data);
+    setIsDeleteModalActive(data);
+  };
+
   return (
     <>
       <div className="list">
-        <h3>Your basket</h3>
+        <h3>Your basket!</h3>
         <ul>
           {basket &&
             basket.map((carPart) => (
@@ -51,13 +63,13 @@ const Basket = () => {
                 </div>
                 <div className="actions">
                   <FontAwesomeIcon
-                    icon={faPlus}
-                    // onClick={() => addToBasket(carPart)}
+                    icon={faEdit}
+                    onClick={() => update(carPart)}
                     className="edit"
                   />
                   <FontAwesomeIcon
                     icon={faTrash}
-                    // onClick={() => addToBasket(carPart)}
+                    onClick={() => remove(carPart)}
                     className="remove"
                   />
                 </div>
@@ -65,6 +77,18 @@ const Basket = () => {
             ))}
         </ul>
       </div>
+      {isEditModalOpen && (
+        <EditModal
+          isEditModalOpen={isEditModalOpen}
+          setIsEditModalActive={setIsEditModalActive}
+        />
+      )}
+      {isDeleteModalOpen && (
+        <RemoveModal
+          isDeleteModalOpen={isDeleteModalOpen}
+          setIsDeleteModalActive={setIsDeleteModalActive}
+        />
+      )}
     </>
   );
 };
