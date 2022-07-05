@@ -37,6 +37,7 @@ public class CarPartsService {
         carPartUpdate.setDescription(carParts.getDescription());
         carPartUpdate.setPrice(carParts.getPrice());
         carPartUpdate.setImageUrl(carParts.getImageUrl());
+        carPartUpdate.setQuantity(carParts.getQuantity());
 
         return carPartsRepository.save(carPartUpdate);
 

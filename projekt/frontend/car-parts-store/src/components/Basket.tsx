@@ -13,6 +13,7 @@ interface CarPart {
   description: string;
   price: number;
   imageUrl: string;
+  quantity: number;
 }
 
 const Basket = () => {
@@ -49,7 +50,12 @@ const Basket = () => {
       <div className="list">
         <h3>Your basket!</h3>
         <ul>
-          {basket &&
+          {!basket ? (
+            <p>Loading....</p>
+          ) : basket.length == 0 ? (
+            <p>No car parts in basket</p>
+          ) : (
+            basket &&
             basket.map((carPart) => (
               <div key={carPart.id} className="container-list">
                 <img
@@ -59,7 +65,8 @@ const Basket = () => {
                 />
                 <div>
                   <h3>{carPart.name}</h3>
-                  <p>{carPart.description}</p>
+                  <p style={{ marginBottom: 15 }}>{carPart.description}</p>
+                  <p>Quantity: {carPart.quantity}</p>
                 </div>
                 <div className="actions">
                   <FontAwesomeIcon
@@ -74,19 +81,24 @@ const Basket = () => {
                   />
                 </div>
               </div>
-            ))}
+            ))
+          )}
         </ul>
       </div>
       {isEditModalOpen && (
         <EditModal
           isEditModalOpen={isEditModalOpen}
           setIsEditModalActive={setIsEditModalActive}
+          basket={basket}
+          setBasket={setBasket}
         />
       )}
       {isDeleteModalOpen && (
         <RemoveModal
           isDeleteModalOpen={isDeleteModalOpen}
           setIsDeleteModalActive={setIsDeleteModalActive}
+          basket={basket}
+          setBasket={setBasket}
         />
       )}
     </>

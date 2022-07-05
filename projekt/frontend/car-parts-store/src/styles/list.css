@@ -1,7 +1,7 @@
 .list{
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 50rem;
     margin: auto;
 }
 .list h3{
@@ -13,6 +13,9 @@
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
+}
+.container-list * {
+    flex: 1;
 }
 .container-list h3{
     text-align: left;
@@ -27,6 +30,7 @@
 
 .container-list .actions{
     margin: auto;
+    text-align: center;
 
 }
 .container-list .actions *{

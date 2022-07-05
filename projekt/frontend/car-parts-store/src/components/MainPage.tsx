@@ -30,7 +30,7 @@ const MainPage = () => {
 
   return (
     <>
-      <NewCarPart />
+      <NewCarPart carParts={carParts} setCarParts={setCarParts} />
       <List carParts={carParts} />
     </>
   );

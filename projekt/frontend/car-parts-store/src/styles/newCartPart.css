@@ -10,7 +10,7 @@
 .addNewCart-form{
     display: flex;
     flex-direction: column;
-    min-width: 30rem;
+    min-width: 50rem;
     margin: auto;
 }
 .addNewCart-form input, .addNewCart-form textarea

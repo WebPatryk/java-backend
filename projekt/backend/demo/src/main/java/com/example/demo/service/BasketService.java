@@ -25,6 +25,13 @@ public class BasketService {
     }
 
     public Basket addToBasket(Basket basket) {
+
+
+        basket.setName(basket.getName());
+        basket.setDescription(basket.getDescription());
+        basket.setPrice(basket.getPrice());
+        basket.setImageUrl(basket.getImageUrl());
+        basket.setQuantity(1);
         return basketRepository.save(basket);
     }
 
@@ -39,6 +46,7 @@ public class BasketService {
         basketUpdate.setDescription(basket.getDescription());
         basketUpdate.setPrice(basket.getPrice());
         basketUpdate.setImageUrl(basket.getImageUrl());
+        basketUpdate.setQuantity(basket.getQuantity());
 
         return basketRepository.save(basketUpdate);
 

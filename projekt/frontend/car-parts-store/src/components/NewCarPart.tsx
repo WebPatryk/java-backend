@@ -5,7 +5,7 @@ import {
   NotificationManager,
 } from "react-notifications";
 
-const NewCarPart = () => {
+const NewCarPart = ({ carParts, setCarParts }) => {
   const [values, setValues] = useState({
     name: "",
     description: "",
@@ -33,13 +33,13 @@ const NewCarPart = () => {
         });
         const json = await response.json();
         console.log(json);
+        setCarParts([...carParts, json]);
         NotificationManager.success("Success", "Car part has been added");
       } catch (_err) {
         console.log(_err);
       }
     };
     fetchData();
-    console.log(values);
   };
 
   return (

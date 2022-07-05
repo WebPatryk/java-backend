@@ -3,11 +3,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: lightgray;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
     min-width:50%;
     border-radius: 3px;
     padding: 1rem 2rem;
+}
 
+.capture-body{
+    background-color: #d7d4d4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -25,6 +34,17 @@
 .delete{
     padding: .5rem 1rem;
     background: red;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.save{
+    padding: .5rem 1rem;
+    background: #1a790b;
     border: none;
     font-size: 1rem;
     color: #fff;

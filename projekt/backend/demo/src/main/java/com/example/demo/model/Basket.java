@@ -16,14 +16,16 @@ public class Basket implements Serializable {
     private String description;
     private Integer price;
     private String imageUrl;
+    private Integer quantity;
 
     public Basket() {}
 
-    public Basket(String name, String description, Integer price, String imageUrl) {
+    public Basket(String name, String description, Integer price, String imageUrl, Integer quantity) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.imageUrl = imageUrl;
+        this.quantity = quantity;
 
     }
 
@@ -66,6 +68,14 @@ public class Basket implements Serializable {
         this.imageUrl = imageUrl;
     }
 
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
 
 
     @Override
@@ -76,6 +86,7 @@ public class Basket implements Serializable {
                 ", description='" + description + '\'' +
                 ", price='" + price + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
+                ", quantity='" + quantity + '\'' +
                 '}';
     }
 }

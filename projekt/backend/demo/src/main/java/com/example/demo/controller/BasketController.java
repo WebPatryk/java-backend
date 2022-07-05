@@ -43,11 +43,12 @@ public class BasketController {
         Basket updateBasket = basketService.updateCarPart(id, basket);
         return new ResponseEntity<>(updateBasket, HttpStatus.OK);
     }
-    
+
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteProductFromBasket(@PathVariable("id") Long id) {
+    public ResponseEntity<Basket> deleteProductFromBasket(@PathVariable("id") Long id) {
+        Basket deleteBasket = basketService.findCarPartById(id);
         basketService.deleteCarPart(id);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(deleteBasket,HttpStatus.OK);
     }
 
 

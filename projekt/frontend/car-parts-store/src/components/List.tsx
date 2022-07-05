@@ -41,7 +41,11 @@ const List = ({ carParts }: Props): JSX.Element => {
     <div className="list">
       <h3>Car Parts list</h3>
       <ul>
-        {carParts &&
+        {!carParts ? (
+          <p>Loading....</p>
+        ) : carParts.length == 0 ? (
+          <p>No car parts</p>
+        ) : (
           carParts.map((carPart) => (
             <div key={carPart.id} className="container-list">
               <img
@@ -61,7 +65,8 @@ const List = ({ carParts }: Props): JSX.Element => {
                 />
               </div>
             </div>
-          ))}
+          ))
+        )}
       </ul>
       <NotificationContainer />
     </div>
