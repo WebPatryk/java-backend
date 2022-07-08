@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import MainPage from "components/MainPage";
 import Discount from "components/Discount";
 import Basket from "components/Basket";
+import Register from "components/Register";
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/discount" element={<Discount />} />
           <Route path="/basket" element={<Basket />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </Router>

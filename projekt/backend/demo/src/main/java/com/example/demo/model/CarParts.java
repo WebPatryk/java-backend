@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.UUID;
 
 @Entity
-@Table(name="carPart")
+@Table(name="car_parts")
 public class CarParts implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
