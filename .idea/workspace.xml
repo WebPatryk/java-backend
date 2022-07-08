@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="447c6ed1-6add-428c-a6e3-75f5387eb2fe" name="Changes" comment="adding profile">
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/Register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/controller/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/CarParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/model/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/repository/ProfileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/backend/demo/src/main/java/com/example/demo/service/ProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/projekt/frontend/car-parts-store/src/components/Profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projekt/.idea/git_toolbox_prj.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
