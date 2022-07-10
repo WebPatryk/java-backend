@@ -2,7 +2,8 @@
   "compilerOptions": {
     "baseUrl": "src",
     "jsx": "react",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false
   },
   "include": ["src"]
 }

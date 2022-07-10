@@ -34,6 +34,12 @@ const NewCarPart = ({ carParts, setCarParts }) => {
         const json = await response.json();
         console.log(json);
         setCarParts([...carParts, json]);
+        setValues({
+          name: "",
+          description: "",
+          price: "",
+          imageUrl: "",
+        })
         NotificationManager.success("Success", "Car part has been added");
       } catch (_err) {
         console.log(_err);

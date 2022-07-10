@@ -11,6 +11,7 @@ function Profile() {
   const [profile, setProfile] = useState<Profile>({ name: "", password: "" });
   const [allProfiles, setAllProfiles] = useState(null);
   const [isLoggin, setIsLoggin] = useState(false);
+  const [user,setUser] = useState(null)
 
   useEffect(() => {
     async function fetchUsers() {
@@ -24,6 +25,7 @@ function Profile() {
         const json = await response.json();
         setAllProfiles(json);
         console.log(json);
+        setUser(json)
       } catch (_err) {
         console.log(_err);
       }
@@ -36,7 +38,8 @@ function Profile() {
 
     const data = allProfiles.filter(
       (item) => item.name === profile.name && item.password === profile.password
-    );
+    )[0];
+    setUser(data)
     console.log(data);
     if (data) {
       console.log("we have user");
@@ -87,7 +90,7 @@ function Profile() {
       ) : (
         <div>
           <p>Profile</p>
-          <p>Hello {JSON.parse(localStorage.getItem("isUserLogged")).name}</p>
+          <p>Hello USER </p>
           <button onClick={logOut}>Logout</button>
         </div>
       )}
